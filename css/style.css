@@ -1,11 +1,11 @@
 /* Estilos gerais */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Poppins;
   background-color: #f4f4f4;
 }
 
 .container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 20px;
   background-color: #fff;
@@ -45,4 +45,42 @@ h1 {
   .container {
     padding: 10px;
   }
+}
+label{
+  margin: 5px;
+}
+
+/* Botão */
+.comic-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #3E6DF0;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.comic-button:hover {
+  background-color: #fff;
+  color: #473EF0;
+  border: 2px solid #000;
+  box-shadow: 5px 5px 0px #000;
+}
+
+.comic-button:active {
+  background-color: #473EF0;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+.class{
+  text-align: center;
+  align-items: center;
 }
