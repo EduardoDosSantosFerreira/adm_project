@@ -46,7 +46,7 @@ h1 {
     padding: 10px;
   }
 }
-label{
+label {
   margin: 5px;
 }
 
@@ -59,28 +59,59 @@ label{
   text-align: center;
   text-decoration: none;
   color: #fff;
-  background-color: #3E6DF0;
+  background-color: #3e6df0;
   border: 2px solid #000;
   border-radius: 10px;
   box-shadow: 5px 5px 0px #000;
   transition: all 0.3s ease;
   cursor: pointer;
+  margin-bottom: 100px;
 }
 
 .comic-button:hover {
   background-color: #fff;
-  color: #473EF0;
+  color: #473ef0;
   border: 2px solid #000;
   box-shadow: 5px 5px 0px #000;
 }
 
 .comic-button:active {
-  background-color: #473EF0;
+  background-color: #473ef0;
   box-shadow: none;
   transform: translateY(4px);
 }
 
-.class{
+.class {
   text-align: center;
   align-items: center;
+}
+
+#front {
+  margin-bottom: 100px;
+  height: 300px;
+  position: relative;
+  border-radius: 30px;
+  background: linear-gradient(
+    to bottom,
+    #021024,
+    #052659,
+    #5483b3,
+    #7da0ca,
+    #c1e8ff
+  );
+  text-align: center;
+}
+
+#wallpaper {
+  width: 200px;
+  position: absolute;
+  bottom: -90px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #004080;
+  border-radius: 100%;
+}
+
+#bem-vindo {
+  text-align: center;
 }

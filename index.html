@@ -17,13 +17,14 @@
 
 <body>
   <div class="container">
-    <h1 class="mt-5">Quiz de Perfil Profissional</h1>
-<div class="class">
-  <img src="img/wallpaper.png" class="img-fluid" style="margin-bottom: 30px; border: 1px solid #004080; border-radius: 100px;" alt="">
-</div>
+    <div class="class" id="front">
+      <img src="img/wallpaper.png" id="wallpaper" class="img-fluid">
+    </div>
 
-    <h4>Bem-vindo ao nosso Quiz de Perfil Profissional!</h4>
-    <p>Este quiz foi cuidadosamente elaborado para ajudá-lo a identificar e alinhar seu perfil profissional com quatro
+    <br>
+    <h4 id="bem-vindo">Bem-vindo ao nosso Quiz de Perfil Profissional!</h4>
+    <p style="text-align: justify;">Este quiz foi cuidadosamente elaborado para ajudá-lo a identificar e alinhar seu
+      perfil profissional com quatro
       tipos distintos: Analista, Executor, Comunicador e Planejador.</p>
     <p>Descubra qual perfil melhor representa suas habilidades, preferências e estilo de trabalho. Vamos começar!</p>
     <br>
@@ -680,8 +681,6 @@
         </div>
       </div>
 
-
-
       <button type="submit" id="submitBtn" class="btn btn-primary" style="display: none;">Enviar</button>
     </form>
     <div id="result" style="display: none;">
@@ -693,8 +692,8 @@
   <footer style="background-color: #f4f4f4; padding: 30px; text-align: center;">
     <p>&copy; 2024 Eduardo Dos Santos Ferreira. Todos os direitos reservados.</p>
   </footer>
-  
-  
+
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
   <script src="js/script.js"></script>
