@@ -126,7 +126,7 @@ label {
  padding-right: 50px;
 }
 
-.perfilImage{
-  width: 400px;
-  height: 400px;
+#perfilImage{
+  width: 250px;
+  height: 250px;
 }

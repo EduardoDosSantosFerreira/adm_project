@@ -58,20 +58,25 @@ document.getElementById('quizForm').addEventListener('submit', function(e) {
 function updateProfileAndImage(maxProfile) {
   document.getElementById('perfil').innerText = maxProfile;
 
-  // Atualiza a imagem correspondente ao perfil
+  // Atualiza a imagem correspondente ao perfil e o texto descritivo
   var perfilImage = document.getElementById('perfilImage');
+  var perfilDescription = document.getElementById('perfilDescription');
   switch (maxProfile) {
       case 'Executor':
-          perfilImage.src = '../img/execultor.jpg';
+          perfilImage.src = '../img/executor.jpg';
+          perfilDescription.innerText = "O Executor: Transformando Visão em Realidade";
           break;
       case 'Analista':
           perfilImage.src = '../img/analista.jpg';
+          perfilDescription.innerText = "O Analista: Desvendando Complexidades e Criando Estratégias Sólidas";
           break;
       case 'Comunicador':
           perfilImage.src = '../img/comunicador.jpg';
+          perfilDescription.innerText = "O Comunicador: Construindo Conexões e Inspirando Mudanças";
           break;
       case 'Planejador':
           perfilImage.src = '../img/planejador.jpg';
+          perfilDescription.innerText = "O Planejador: Construindo Pontes entre o Presente e o Futuro";
           break;
   }
 
