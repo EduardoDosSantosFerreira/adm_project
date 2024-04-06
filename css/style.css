@@ -19,7 +19,6 @@ h1 {
 }
 
 .form-group {
-  margin: 100px;
   margin-top: -30px;
   text-align: center;
 }
@@ -125,4 +124,9 @@ label {
 .container-fluid{
  padding-left: 50px;
  padding-right: 50px;
+}
+
+.perfilImage{
+  width: 400px;
+  height: 400px;
 }

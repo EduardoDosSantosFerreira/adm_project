@@ -20,8 +20,8 @@
     <div class="class" id="front">
       <img src="img/wallpaper.png" id="wallpaper" class="img-fluid">
     </div>
-
     <br>
+
     <h4 id="bem-vindo">Bem-vindo ao nosso Quiz de Perfil Profissional!</h4>
     <p style="text-align: justify;">Este quiz foi cuidadosamente elaborado para ajudá-lo a identificar e alinhar seu
       perfil profissional com quatro
@@ -31,6 +31,7 @@
     <div class="class">
       <button id="startQuizBtn" class="comic-button">Iniciar Quiz</button>
     </div>
+
     <form id="quizForm" style="display: none;">
 
       <!-- Pergunta 1 -->
@@ -155,7 +156,6 @@
           </label><br>
         </div>
       </div>
-
 
       <!-- Pergunta 6 -->
       <div class="form-group">
@@ -364,7 +364,6 @@
         </div>
       </div>
 
-
       <!-- Pergunta 14 -->
       <div class="form-group">
         <label>Pergunta 14: Ao lidar com desafios no ambiente profissional, qual é sua primeira abordagem?</label><br>
@@ -491,7 +490,6 @@
           </label><br>
         </div>
       </div>
-
 
       <!-- Pergunta 19 -->
       <div class="form-group">
@@ -683,105 +681,23 @@
 
       <button type="submit" id="submitBtn" class="btn btn-primary" style="display: none;">Enviar</button>
     </form>
+
     <div id="result" style="display: none;">
       <h2 class="mt-5">Seu perfil é: <span id="perfil"></span></h2>
+      <img id="perfilImage" src="" alt="Perfil Image">
       <canvas id="chart" width="400" height="400"></canvas>
-    </div>
+  </div>
+
   </div>
 
   <footer style="background-color: #f4f4f4; padding: 30px; text-align: center;">
     <p>&copy; 2024 Eduardo Dos Santos Ferreira. Todos os direitos reservados.</p>
   </footer>
 
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+  <script src="js/fun.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/questions.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
-  <script src="js/script.js"></script>
-  <script>
-    document.getElementById('startQuizBtn').addEventListener('click', function () {
-      this.style.display = 'none';
-      document.getElementById('quizForm').style.display = 'block';
-      showQuestion(1); // Mostra a primeira pergunta
-    });
-
-    var questionNumber = 1;
-    var totalQuestions = document.querySelectorAll('.form-group').length;
-
-    document.querySelectorAll('.next-question-btn').forEach(button => {
-      button.addEventListener('click', function () {
-        showQuestion(++questionNumber);
-        if (questionNumber === totalQuestions) {
-          document.getElementById('submitBtn').style.display = 'block';
-        }
-      });
-    });
-
-    function showQuestion(questionNumber) {
-      var questions = document.getElementsByClassName('form-group');
-      for (var i = 0; i < questions.length; i++) {
-        if (i === questionNumber - 1) {
-          questions[i].style.display = 'block';
-        } else {
-          questions[i].style.display = 'none';
-        }
-      }
-    }
-  </script>
-  <script>
-    document.getElementById('startQuizBtn').addEventListener('click', function () {
-      this.style.display = 'none';
-      document.getElementById('quizForm').style.display = 'block';
-      showQuestion(1); // Mostra a primeira pergunta
-    });
-
-    var questionNumber = 1;
-    var totalQuestions = document.querySelectorAll('.form-group').length;
-
-    document.querySelectorAll('.next-question-btn').forEach(button => {
-      button.addEventListener('click', function () {
-        showQuestion(++questionNumber);
-        if (questionNumber === totalQuestions) {
-          document.getElementById('submitBtn').style.display = 'block';
-        }
-      });
-    });
-
-    // Adicionando evento de clique aos elementos de entrada de rádio
-    document.querySelectorAll('input[type=radio]').forEach(radio => {
-      radio.addEventListener('click', function () {
-        // Verificar se o usuário respondeu à última pergunta
-        if (questionNumber === totalQuestions) {
-          document.getElementById('submitBtn').style.display = 'block';
-        }
-        // Avançar para a próxima pergunta
-        showQuestion(++questionNumber);
-      });
-    });
-
-    function showQuestion(questionNumber) {
-      var questions = document.getElementsByClassName('form-group');
-      for (var i = 0; i < questions.length; i++) {
-        if (i === questionNumber - 1) {
-          questions[i].style.display = 'block';
-        } else {
-          questions[i].style.display = 'none';
-        }
-      }
-    }
-  </script>
-  <script>
-    document.getElementById("startQuizBtn").addEventListener("click", function () {
-      document.querySelector("h4").style.display = "none";
-      document.querySelectorAll("p").forEach(function (element) {
-        element.style.display = "none";
-      });
-      document.getElementById("quizForm").style.display = "block"; // Mostra o formulário do quiz
-    });
-  </script>
-
-
 </body>
 
 </html>
