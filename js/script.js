@@ -67,24 +67,41 @@ function updateProfileAndImage(maxProfile) {
   var perfilDescription = document.getElementById("perfilDescription");
   switch (maxProfile) {
     case "Executor":
-      perfilImage.src = "../img/executor.jpg";
+      perfilImage.src = "img/executor.jpg";
       perfilDescription.innerText =
-        "O Executor: Transformando Visão em Realidade";
+        "O Executor: Transformando Visão em Realidade\n\n" +
+        "O perfil Executor é caracterizado por sua habilidade em transformar planos e ideias em ações concretas. " +
+        "Pessoas com esse perfil são práticas, focadas e altamente eficientes na implementação de projetos. " +
+        "Elas se destacam por sua capacidade de resolver problemas rapidamente e de gerenciar bem o tempo. " +
+        "Os Executores são movidos por resultados e têm uma abordagem direta e orientada para a ação, " +
+        "tornando-os essenciais em qualquer equipe que precise concretizar metas e objetivos.";
       break;
     case "Analista":
-      perfilImage.src = "../img/analista.jpg";
+      perfilImage.src = "img/analista.jpg";
       perfilDescription.innerText =
-        "O Analista: Desvendando Complexidades e Criando Estratégias Sólidas";
+        "O Analista: Desvendando Complexidades e Criando Estratégias Sólidas\n\n" +
+        "O Analista é aquele que se aprofunda nos detalhes, buscando entender as nuances e complexidades de cada situação. " +
+        "Com uma mente lógica e estruturada, os Analistas são excelentes em avaliar dados, identificar padrões e desenvolver " +
+        "estratégias bem fundamentadas. Eles são meticulosos e precisos, garantindo que as decisões sejam baseadas em informações " +
+        "concretas e análises rigorosas. Esse perfil é crucial para empresas que precisam de uma visão clara e detalhada para tomar decisões informadas.";
       break;
     case "Comunicador":
-      perfilImage.src = "../img/comunicador.jpg";
+      perfilImage.src = "img/comunicador.jpg";
       perfilDescription.innerText =
-        "O Comunicador: Construindo Conexões e Inspirando Mudanças";
+        "O Comunicador: Construindo Conexões e Inspirando Mudanças\n\n" +
+        "Os Comunicadores são os mestres em criar e manter relacionamentos. Eles têm uma habilidade natural para se conectar " +
+        "com as pessoas e inspirar mudanças através de suas palavras e ações. Com excelente capacidade de comunicação, " +
+        "eles são persuasivos e sabem como influenciar positivamente os outros. Os Comunicadores são essenciais em funções " +
+        "que requerem colaboração, negociação e motivação de equipes.";
       break;
     case "Planejador":
-      perfilImage.src = "../img/planejador.jpg";
+      perfilImage.src = "img/planejador.jpg";
       perfilDescription.innerText =
-        "O Planejador: Construindo Pontes entre o Presente e o Futuro";
+        "O Planejador: Construindo Pontes entre o Presente e o Futuro\n\n" +
+        "O Planejador é o estrategista de longo prazo, focado em construir um caminho claro do presente para o futuro. " +
+        "Com uma visão abrangente e um talento para organização, os Planejadores são excelentes em definir objetivos " +
+        "e criar planos detalhados para alcançá-los. Eles antecipam desafios e oportunidades, garantindo que os recursos " +
+        "sejam alocados de maneira eficiente. Esse perfil é essencial para qualquer organização que busca crescimento e sustentabilidade a longo prazo.";
       break;
   }
 
