@@ -55,16 +55,16 @@ function updateProfileAndImage(maxProfile) {
   var perfilImage = document.getElementById("perfilImage");
   switch (maxProfile) {
     case "Executor":
-      perfilImage.src = "./img/executor.jpg";
+      perfilImage.src = "img/executor.jpg";
       break;
     case "Analista":
-      perfilImage.src = "./img/analista.jpg";
+      perfilImage.src = "img/analista.jpg";
       break;
     case "Comunicador":
-      perfilImage.src = "./img/comunicador.jpg";
+      perfilImage.src = "img/comunicador.jpg";
       break;
     case "Planejador":
-      perfilImage.src = "./img/planejador.jpg";
+      perfilImage.src = "img/planejador.jpg";
       break;
   }
 
